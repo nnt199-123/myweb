@@ -1,0 +1,391 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1: #FC6600;  
+    --color2: #0c0d0d;
+}
+body{
+    background-color: var(--color2);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+
+}
+.zalo{
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 60px;
+}
+.zalo :hover{
+    transform: scale(1.1);
+}
+.mess{
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    width: 60px;
+}
+.zalo :hover{
+    transform: scale(1.1);
+}
+header{
+    margin: 0 auto;
+    background-color: var(--color2);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header img{
+    width: 110px;
+    padding: 10px;
+}
+header h2{
+    padding: 20px 20px;
+    color: aliceblue;
+}
+.menu{
+    background-color: var(--color2);
+    color: white;
+    font-size: 22px;
+    padding: 7px;
+}
+nav{
+    background-color: var(--color2);
+    padding: 10px;
+    text-align: center;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    
+}
+.slide{
+    position: relative;
+    text-align: center;
+
+}
+.slide .bi-caret-left{
+    position: absolute;
+    left: 10px;
+    top: 45%;
+    font-size: 2rem;
+    color: white;
+}
+
+.slide .bi-caret-right{
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    font-size: 2rem;
+    color: white;
+}
+.slide .list{
+    position: absolute;
+    bottom: 5%;
+    font-size: 5rem;
+    text-align: center;
+    left:calc(50% - 40px);
+}
+.list-tour article{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.851);
+    border-radius: 10px;
+    margin: 10px;
+
+}
+.chunho{
+    color: aliceblue;
+}
+.list-tour img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+
+}
+.list-tour p{
+    padding: 10px;
+}
+.feedback{
+    text-align: center;
+
+}
+.feedback img{
+    width: 250px;
+    height: 250px;
+    border: 1px solid green;
+    border-radius: 50%;
+}
+.feedback article{
+    padding: 10px;
+}
+.feedback p i {
+    color: #f1fb32;
+}
+.chusieudep h2{
+    color: #FC6600;
+}
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.grid-container img{
+ width: 100%;
+ border-radius: 10px;
+}
+.grid-container{
+    padding: 10px;
+    
+}
+.item1{
+    height: 200%;
+}
+.list-tour div{
+    overflow: hidden;
+}
+.list-tour img:hover{
+    transform: scale(1.1);
+}
+.list-tour img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transform: 0.5s;
+}
+.banner {
+    position: relative;
+}
+.banner::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.banner:hover::before {
+    -webkit-animation: shine 1s;
+    animation: shine 1s;
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+.grid-container img:hover{
+    transform: scale(1.1);}
+.feedback img:hover{
+    transform: scale(1.1);
+}
+nav a:hover{
+    color: red;
+    transform: scale(1.2);
+} 
+.chu :hover{
+    color: yellow;
+    transform: scale(1.1);
+}
+.color{
+    display: flex;
+    justify-content: center;
+}
+#c1{
+    width: 15px;
+    height: 15px;
+    background-color: #f1fb32;
+    margin: 5px;
+}
+#c2{
+    width: 15px;
+    height: 15px;
+    background-color:aquamarine;
+    margin: 5px;
+}
+
+#c3{
+    width: 15px;
+    height: 15px;
+    background-color:#FC6600;
+    margin: 5px;
+}
+/* dang nhap */
+.back nav {
+    background-image: -webkit-linear-gradient(top left, #a802e0, #e2617d);;
+}
+.dn h3 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.login img {
+    margin-right: 20px;
+}
+.login {
+    height: 91.4vh;
+    background-image: -webkit-linear-gradient(top left, #a802e0, #f7676a);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.login #Pass,#User {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.login p, a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.login button {
+    height: 30px;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.login form i:hover {
+    color: rgb(255, 0, 0);
+}
+.login article {
+    margin-bottom: 100px;
+}
+#User{
+    border-radius: 5px;
+}
+#Pass{
+    border-radius: 5px;
+}
+#imglogin :hover{
+    transform: scale(1.2);
+}
+.galaxy{
+    display: flex;
+    flex-wrap: wrap;
+}
+.galaxy img{
+    width: 100%;
+}
+.column-3 img{
+    height: 33.33%;
+    object-fit: cover;
+}
+.column-4 img{
+    height: 25%;
+    object-fit: cover;
+}
+.column-3,.column-4{
+    flex: 50%;
+    padding: 2px;
+    height: 500px;
+}
+
+@media screen and (min-width:240px){
+   
+
+}
+@media screen and (min-width:768px){
+    nav{
+        display: none;
+        display: flex;
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+    .list-tour{
+        display: flex;
+    }
+    .feedback{
+        display: flex;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'item1 item1 item2 item3'
+        'item1 item1 item4 item5';
+        gap: 10px;
+    }
+    .column-3,.column-4{
+        flex: 25%;
+    }
+}
+@media screen and (min-width:1024px){
+    header{
+    margin-left: 12%;
+    margin-right: 12%;
+ }
+    main,header{
+    margin-left: 12%;
+    margin-right: 12%;
+ }
+footer section{
+    margin-left:12% ;
+    margin-right: 12%;
+    display: flex; 
+ }
+ footer {
+    background: rgb(0, 195, 255);
+    color: #fff;
+}
+footer section {
+    margin: 0 12%;
+    display: flex;
+}
+footer section div {
+    margin: 0 22px;
+}
+footer section div p{
+    margin: 5px 0;
+    font-size: 0.8rem;
+}
+footer section i {
+    margin: 3px;
+}
+footer section button {
+    background: orangered;
+    color: #fff;
+    border: none;
+    padding: 5px;
+}
+footer section input {
+    height: 25px;
+    width: 65%;
+}
+footer section hr {
+    width: 50%;
+}
+}
